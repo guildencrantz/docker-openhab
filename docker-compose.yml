@@ -1,0 +1,6 @@
+openhab:
+  build: .
+  net: host
+  volumes:
+    - configurations:/openhab/configurations
+  command: /openhab/start.sh

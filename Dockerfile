@@ -35,4 +35,6 @@ RUN set -x                                                                  && \
     unzip distribution-1.7.0-SNAPSHOT-addons.zip org.openhab.binding.nest-1.7.0-SNAPSHOT.jar  && \
     unzip distribution-1.7.0-SNAPSHOT-addons.zip org.openhab.binding.sonos-1.7.0-SNAPSHOT.jar
 
+VOLUME ["/openhab/configurations"]
+
 CMD ["/openhab/start.sh"]
