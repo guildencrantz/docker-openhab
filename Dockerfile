@@ -27,7 +27,7 @@ RUN set -x                                         && \
     rm distribution-1.7.0-SNAPSHOT-runtime.zip     && \
     cd addons                                      && \
     curl -sOL 'https://openhab.ci.cloudbees.com/job/openHAB/lastSuccessfulBuild/artifact/distribution/target/distribution-1.7.0-SNAPSHOT-addons.zip'  && \
-    unzip distribution-1.7.0-SNAPSHOT-addons.zip org.openhab.binding.http-1.7.0-SNAPSHOT.jar  && \
+    unzip distribution-1.7.0-SNAPSHOT-addons.zip org.openhab.binding.http-1.7.0-SNAPSHOT.jar
 
 # Additional bindings
 RUN set -x                                                                                    && \
