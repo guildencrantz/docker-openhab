@@ -1,0 +1,24 @@
+# Overview
+
+Docker Image for openHAB 1.7-SNAPSHOT with my personal configurations.
+
+Since there isn't much to configuring openHAB to run in docker this is an all-in-one rather than being built on a base openHAB image.
+
+# Usage
+
+## Docker Registry
+
+This image is not officially registered.
+
+## docker-compose
+
+A container can be controlled with [docker-compose](https://docs.docker.com/compose/), but it won't have a configured openhab.cfg unless you put one in the `configurations` directory:
+
+Run:
+`docker-compose up`
+
+Stop:
+`docker-compose stop`
+
+I've added `/configurations/openhab.cfg` to `.gitignore` so my suggestion is that when you check out the project you simple hardlink that location to an `openhab.cfg` that lives in a private repository.
+
