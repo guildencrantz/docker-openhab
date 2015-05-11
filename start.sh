@@ -6,7 +6,7 @@ cd `dirname $0`
 eclipsehome="server";
 
 # set ports for HTTP(S) server
-HTTP_PORT=8080
+HTTP_PORT=8880
 HTTPS_PORT=8443
 
 # get path to equinox jar inside $eclipsehome folder
@@ -17,6 +17,7 @@ java \
 	-Dosgi.clean=true \
 	-Declipse.ignoreApp=true \
 	-Dosgi.noShutdown=true  \
+	-Djetty.port=$HTTP_PORT \
 	-Djetty.port.ssl=$HTTPS_PORT \
 	-Djetty.home=.  \
 	-Dlogback.configurationFile=configurations/logback.xml \
