@@ -38,5 +38,6 @@ RUN set -x                                                                  && \
 
 COPY start.sh /openhab/start.sh
 COPY configurations /openhab/configurations
+COPY images/* /openhab/webapps/images/
 
 CMD ["/openhab/start.sh"]

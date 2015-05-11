@@ -1,0 +1,11 @@
+Group Sonos
+
+/* LivingRoom */
+String LivingRoomCurrentTrack  "CurrentTrack [%s]"  (Sonos, LivingRoom)   {sonos="[LivingRoom:currenttrack]", autoupdate="false"}
+
+/* MasterBathroom */
+String MasterBathroomCurrentTrack  "CurrentTrack [%s]"  (Sonos, MasterBathroom)   {sonos="[MasterBathroom:currenttrack]", autoupdate="false"}
+
+/* MasterBedroom */
+String MasterBedroomCurrentTrack  "CurrentTrack [%s]"  (Sonos, MasterBedroom)   {sonos="[MasterBedroom:currenttrack]", autoupdate="false"}
+

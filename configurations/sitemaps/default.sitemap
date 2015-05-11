@@ -1,0 +1,8 @@
+sitemap default label="Main Menu" {
+	Frame {
+		Group item=LivingRoom label="Living Room" icon="television"
+		Group item=MasterBathroom label="Master Bathroom" icon="bath"
+		Group item=MasterBedroom label="Master Bedroom" icon="bedroom"
+		Group item=Sonos label="Sonos" icon="sonos"
+	}
+}
